@@ -29,5 +29,6 @@ const styles = StyleSheet.create({
   buttonMain__text: {
     color: '#ffffff',
     fontFamily: 'Muli-Black',
+    letterSpacing: 48,
   },
 });

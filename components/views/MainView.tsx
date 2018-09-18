@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
+import constants from '../../assets/styles/config.tsx';
 import ButtonMain from '../atoms/ButtonMain.tsx';
 
 function openCamera() {
@@ -11,11 +12,12 @@ export default class MainView extends React.Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>
-          yass!
+        <Text style={styles.message}>
+          Hey there!{'\n'}
+          I'm Doug the photogenic dog and I'm here to wish you a happy picture
         </Text> 
         <ButtonMain
-          label='Take picture'
+          label='T a k e   p i c t u r e'
           callback={ openCamera }
         />
       </View>
@@ -29,5 +31,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 48,
+  },
+  message: {
+    fontFamily: 'Muli',
+    color: constants.COLOR_TEXT,
+    textAlign: 'center',
+    padding: 48,
+    fontSize: 16,
+    lineHeight: 24,
   },
 });
