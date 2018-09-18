@@ -28,6 +28,6 @@ const styles = StyleSheet.create({
   },
   buttonMain__text: {
     color: '#ffffff',
-    fontWeight: 'bold',
+    fontFamily: 'Muli-Black',
   },
 });
