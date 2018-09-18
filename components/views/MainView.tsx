@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
-import constants from '../../assets/styles/config.tsx';
-import ButtonMain from '../atoms/ButtonMain.tsx';
+import constants from '../../assets/styles/config';
+import FeatureImage from '../atoms/FeatureImage';
+import ButtonMain from '../atoms/ButtonMain';
 
 function openCamera() {
   console.log('inside openCamera');
@@ -12,6 +13,7 @@ export default class MainView extends React.Component<{}> {
   render() {
     return (
       <View style={styles.container}>
+        <FeatureImage/>
         <Text style={styles.message}>
           Hey there!{'\n'}
           I'm Doug the photogenic dog and I'm here to wish you a happy picture
@@ -22,8 +24,8 @@ export default class MainView extends React.Component<{}> {
         />
       </View>
     );
-  
-}}
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
