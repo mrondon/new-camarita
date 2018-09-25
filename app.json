@@ -4,6 +4,10 @@
     "packagerOpts": {
       "sourceExts": ["ts", "tsx"],
       "transformer": "node_modules/react-native-typescript-transformer/index.js"
-    }
+    },
+    "name": "Camarita",
+    "icon": "./icon.png",
+    "version": "0.0.1",
+    "slug": "camarita",
   }
 }
