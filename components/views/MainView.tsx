@@ -19,7 +19,7 @@ export default class MainView extends React.Component<{}> {
           I'm Doug the photogenic dog and I'm here to wish you a happy picture
         </Text> 
         <ButtonMain
-          label='T a k e   p i c t u r e'
+          label='Take picture'
           callback={ openCamera }
         />
       </View>
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     color: constants.COLOR_TEXT,
     textAlign: 'center',
     paddingHorizontal: 48,
-    paddingTop: 24,
+    paddingTop: 36,
     paddingBottom: 48,
     fontSize: 16,
     lineHeight: 24,

@@ -24,11 +24,11 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     height: 48,
     paddingVertical: 14,
-    paddingHorizontal: 24,
+    paddingHorizontal: 32,
   },
   buttonMain__text: {
     color: '#ffffff',
     fontFamily: 'Muli-Black',
-    letterSpacing: 48,
+    letterSpacing: 4,
   },
 });
