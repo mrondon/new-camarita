@@ -1,19 +1,20 @@
 import * as React from 'react';
-import { StyleSheet, TouchableHighlight, Text } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
+import { Link } from 'react-router-native';
 
 import constants from '../../assets/styles/config.tsx';
 
 export default class ButtonMain extends React.Component<{}> {
   render() {
     return (
-      <TouchableHighlight
+      <Link 
+        to={ this.props.to }
         style={ styles.buttonMain }
-        onPress={ this.props.callback }
       >
         <Text style={ styles['buttonMain__text'] }>
           { this.props.label.toUpperCase() }
         </Text>
-      </TouchableHighlight>
+      </Link>
     );
   
 }}

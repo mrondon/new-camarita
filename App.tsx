@@ -1,6 +1,10 @@
 import * as React from 'react';
+import { View } from 'react-native';
 import { Font } from 'expo';
-import MainView from './components/views/MainView.tsx';
+import { NativeRouter, Route, Link } from 'react-router-native';
+
+import MainView from './components/views/MainView';
+import Camera from './components/views/Camera';
 
 export default class App extends React.Component<{}> {
   
@@ -24,7 +28,18 @@ export default class App extends React.Component<{}> {
 
   render() {
     return this.state.loadedAssets && (
-      <MainView/>
+      <NativeRouter>
+        <View style={ styles.app }>
+          <Route exact path="/" component={ MainView }/>
+          <Route path="/camera" component={ Camera }/>
+        </View>
+      </NativeRouter>
     );
   }
+}
+
+const styles = {
+  app: {
+    flex: 1,
+  },
 }

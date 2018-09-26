@@ -20,7 +20,7 @@ export default class MainView extends React.Component<{}> {
         </Text> 
         <ButtonMain
           label='Take picture'
-          callback={ openCamera }
+          to='/camera'
         />
       </View>
     );
