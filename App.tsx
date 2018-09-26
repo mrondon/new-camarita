@@ -4,7 +4,7 @@ import { Font } from 'expo';
 import { NativeRouter, Route, Link } from 'react-router-native';
 
 import MainView from './components/views/MainView';
-import Camera from './components/views/Camera';
+import CameraView from './components/views/Camera';
 
 export default class App extends React.Component<{}> {
   
@@ -31,7 +31,7 @@ export default class App extends React.Component<{}> {
       <NativeRouter>
         <View style={ styles.app }>
           <Route exact path="/" component={ MainView }/>
-          <Route path="/camera" component={ Camera }/>
+          <Route path="/camera" component={ CameraView }/>
         </View>
       </NativeRouter>
     );
